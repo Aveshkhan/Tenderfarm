@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenderfarm</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="body-pd" style="background-color: var(--white-color);">
+    <header class="header" id="header">
+        <div class="header-content-right">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+            <h4>Best Tenders</h4>
+        </div>
+        <div class="header-content-right">
+            <div class="notify-bell">
+                <span class="badge rounded-pill bg-danger">5</span>
+                <i class='bx bx-bell'></i>
+            </div>
+            <div class="form-outline" id="search-bar">
+                <input type="search" id="form1" class="form-control " placeholder="Search" aria-label="Search" />
+            </div>
+            <div class="header-profile">
+                <div class="header__img">
+                    <img src="/user.png" alt="">
+                </div>
+                <h5>David</h5>
+            </div>
+        </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo">
+                    <i class='bx bx-globe nav__logo-icon'></i>
+                    <span class="nav__logo-name">Tenderfarm</span>
+                </a>
+                <div class="nav__list">
+                    <a href="#" class="nav__link active">
+                        <i class='bx bxs-home nav__icon'></i>
+                        <span class="nav__name">COMPANY</span>
+                    </a>
+                    <div class="dropdown">
+                        <a href="#" class="nav__link dropbtn">
+                            <i class='bx bx-search nav__icon'></i>
+                            <span class="nav__name">EXPLORE</span>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">LATEST TENDERS</a>
+                            <a href="/index.html">BEST TENDERS</a>
+                            <a href="#">TEAM SEARCH</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="nav__link dropbtn">
+                            <i class='bx bxs-message-rounded-detail nav__icon'></i>
+                            <span class="nav__name">NOTIFICATIONS <span
+                                    class="badge rounded-pill bg-warning text-dark">1</span></span>
+                        </a>
+                        <div class="dropdown-content notify-dropdown">
+                            <div class="dropdown-content-logo">
+                                <i class='bx bxl-apple'></i>
+                                <div class="dropdown-content-span">
+                                    <span id="span1">Apple Inc.</span>
+                                    <span id="span2">ending soon</span>
+                                </div>
+                            </div>
+                            <p>Hey, don,t forget, there's still time to get that tender!</p>
+                        </div>
+                    </div>
+                    <a href="#" class="nav__link">
+                        <i class='bx bxs-envelope nav__icon'></i>
+                        <span class="nav__name">MESSAGE</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                        <i class='bx bxs-user nav__icon'></i>
+                        <span class="nav__name">PROFILE</span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav__link" id="nav-btn">
+                <button class="button bx bxs-brightness"></button>
+                <button class="button bx bx-user-plus"></button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 d-flex justify-content-center align-items-center">
+                    <h4 class="cards-header">Apple Inc.</h4>
+                    <img src="/Apple grey 1.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <div class="anim"></div>
+                        <div class="body_" id="body_">
+                            <div id="timediv"></div>
+                        </div>
+                        <p class="card-text">ios 10 Lead Team Design</p>
+                    </div>
+                    <div class="cards-footer d-flex justify-content-between align-items-center">
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">89</p>
+                            <small>teams</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">$88.5m</p>
+                            <small>budget</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">15.2%</p>
+                            <small>success</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 d-flex justify-content-center align-items-center">
+                    <h4 class="cards-header">Nike Inc.</h4>
+                    <img src="/nike.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="card-title">10d:21h:33m</h5>
+                        <p class="card-text">Fall Winter 2016 commercial</p>
+                    </div>
+                    <div class="cards-footer d-flex justify-content-between align-items-center">
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">254</p>
+                            <small>teams</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">$14.5m</p>
+                            <small>budget</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">5.9%</p>
+                            <small>success</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 d-flex justify-content-center align-items-center">
+                    <h4 class="cards-header">Samsung Electronics Co. Ltd</h4>
+                    <img src="/Samsung_logo 1.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="card-title">23d:05h:17m</h5>
+                        <p class="card-text">Samsung center App Design</p>
+                    </div>
+                    <div class="cards-footer d-flex justify-content-between align-items-center">
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">642</p>
+                            <small>teams</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">$10.2m</p>
+                            <small>budget</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">28.5%</p>
+                            <small>success</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+            <div class="col">
+                <div class="card h-100 d-flex justify-content-center align-items-center">
+                    <h4 class="cards-header">Evernote Corp.</h4>
+                    <img src="/evernote 1.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                            <h5 class="card-title">20d:15h:02m</h5>
+                            <p class="card-text">Fall Product Redesign</p>
+                        </div>
+                    </div>
+                    <div class="cards-footer d-flex justify-content-between align-items-center">
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">856</p>
+                            <small>teams</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">$8.7m</p>
+                            <small>budget</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">67.4%</p>
+                            <small>success</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 d-flex justify-content-center align-items-center">
+                    <h4 class="cards-header">Twitter Inc.</h4>
+                    <img src="/twitter.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="card-title">14d:06h:03m</h5>
+                        <p class="card-text">Mobile Client Design</p>
+                    </div>
+                    <div class="cards-footer d-flex justify-content-between align-items-center">
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">964</p>
+                            <small>teams</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">$5m</p>
+                            <small>budget</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">10.3%</p>
+                            <small>success</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 d-flex justify-content-center align-items-center">
+                    <h4 class="cards-header">SoundCloud LLC.</h4>
+                    <img src="/soundcloud.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="card-title">10d:22h:03m</h5>
+                        <p class="card-text">Innovative Product Monetization</p>
+                    </div>
+                    <div class="cards-footer d-flex justify-content-between align-items-center">
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">230</p>
+                            <small>teams</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">$4.9m</p>
+                            <small>budget</small>
+                        </div>
+                        <div class="card-footer-text">
+                            <p class="card-text footer-text">39.2%</p>
+                            <small>success</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
